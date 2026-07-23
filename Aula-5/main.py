@@ -163,15 +163,20 @@
 # conhece(Use apenas input, print e variavel)
 # nome, email, idade, cidade, gradução, estado civil 
 
-nome = input('Digite seu nome: ')
-email = input('Digite seu e-mal: ')
-cidade = input('Digite sua cidade: ')
-graduacao = input('Digite sua graduacao: ')
-estado = input('Digite seu estadi civil: ')
+# nome = input('Digite seu nome: ')
+# email = input('Digite seu e-mal: ')
+# cidade = input('Digite sua cidade: ')
+# graduacao = input('Digite sua graduacao: ')
+# estado = input('Digite seu estadi civil: ')
 
 
-print(nome)
-print(email)
-print(cidade)
-print(graduacao)
-print(estado)
+# print(nome)
+# print(email)
+# print(cidade)
+# print(graduacao)
+# print(estado)
+
+
+x1 = (wEIDEMAN)
+x = tuple(x1) 
+x= list(x1)
