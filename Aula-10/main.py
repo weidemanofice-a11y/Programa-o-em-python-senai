@@ -291,11 +291,59 @@
       
 #  2 -  Faça um sistema, utilizando while e listas, que permita o usuário escrever o nome de 10 pessoas e os mostre na tela.
 
-Contador = 0
-nome = ('')
+# Contador = 0
+# lista_nome = []
 
-while Contador <= 9:
-      nome = input('digite nome: ') 
+# while Contador <= 9:
+#       nome = (input('digite nome: '))
+#       lista_nome.append(nome) 
+#       Contador = Contador + 1 
+# print('total de nomes', lista_nome) 
 
-      print('nome')
-      Contador = Contador + 1 
+
+
+
+
+#  Crie um sistema de notas alunos, com as seguintes operações:
+#  Utilize While ou for 
+
+
+
+senha_padrao = 'weideman'
+contador = 0
+nota1 = 0.0
+nota2 = 0.0
+soma = 0.0
+media = 0.0
+
+while contador <= 3:
+      senha_usuario = input('Digite a sua senha: ')
+      contador += 1 
+
+      if contador == 2:
+         print('tentativas esgotadas!') 
+         break
+      elif senha_usuario != senha_padrao:
+         contador+=1
+         print('Usuario! Senha Inválida. Tente novamente')
+         senha_usuario = input('Digite a sua senha: ')
+
+      else:
+          print('Acesso Permitido!')
+          contador = contador + 1 
+
+          nota1 = float(input('Digite a primeira nota: '))
+          nota2 = float(input('Digite a segunda nota: '))
+          
+          soma = nota1 + nota2
+          media = soma / 2 
+
+          if media >= 7:
+             print('passou direto')
+             break
+          elif media >= 5:
+             print('esta de recuperação..!')
+             break
+          else:
+              print('Parabêns esta REPROVADOOO...!') 
+              break
